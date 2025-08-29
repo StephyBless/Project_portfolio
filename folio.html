@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stephy Bless | Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #202020, #000000, #000000);
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: linear-gradient(135deg, #4facfe, #00f2fe);
+      color: white;
+      border-bottom-left-radius: 40px;
+      border-bottom-right-radius: 40px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
+    section {
+      padding: 3rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 2rem;
+      color: #ffffff;
+      position: relative;
+    }
+
+    h2::after {
+      content: '';
+      display: block;
+      width: 80px;
+      height: 4px;
+      background: #00c6ff;
+      margin: 0.5rem auto 0;
+      border-radius: 2px;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      perspective: 1000px;
+    }
+
+    .card-inner {
+      position: relative;
+      width: 100%;
+      height: 200px;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+      cursor: pointer;
+    }
+
+    .card:hover .card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .card-front, .card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border-radius: 16px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+    }
+
+    .card-front {
+      background: white;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #222;
+    }
+
+    .card-back {
+      background: #00c6ff;
+      color: white;
+      transform: rotateY(180deg);
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .card-back p {
+      margin-bottom: 1rem;
+    }
+
+    .card-back a {
+      display: inline-block;
+      padding: 0.4rem 0.8rem;
+      background: #222;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #222;
+      color: white;
+      margin-top: 3rem;
+    }
+
+    footer a {
+      color: #00c6ff;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Stephy Bless</h1>
+    <p>Technologist & Future Techie | Projects & Presentations</p>
+  </header>
+
+  <!-- Projects Section -->
+  <section>
+    <h2>Projects</h2>
+    <div class="card-grid">
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">Community Builder Platform</div>
+          <div class="card-back">
+            <p>MERN stack app with posts, likes, comments, and uploads for building communities and enable interactions.</p>
+            <a href="https://github.com/StephyBless/social_media" target="_blank">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">Chat Application</div>
+          <div class="card-back">
+            <p>A real-time chat application that allows users to connect instantly, send and receive messages seamlessly, and stay engaged with a clean and responsive interface.</p>
+            <a href="https://github.com/StephyBless/Chat_Application" target="_blank">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">Business Evaluator</div>
+          <div class="card-back">
+            <p>An AI-powered application that analyzes business performance, evaluates key metrics, and provides intelligent insights to support data-driven decision-making and growth strategies.</p>
+            <a href="https://github.com/StephyBless/AI_driven_business_evaluator" target="_blank">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">Student Management</div>
+          <div class="card-back">
+            <p>A Java-based application that manages student records efficiently using JDBC, enabling operations like adding, updating, deleting, and retrieving data from the database with ease.</p>
+            <a href="https://github.com/StephyBless/JDBC_Connectivity" target="_blank">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">Gamification in Inventory Management</div>
+          <div class="card-back">
+            <p>An innovative inventory management system that integrates gamification elements to enhance user engagement, improve accuracy in stock handling, and motivate employees through rewards and performance tracking.</p>
+            <a href="https://github.com/StephyBless/Gamified-inventory-management" target="_blank">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">Air Traffic Flow Optimization</div>
+          <div class="card-back">
+            <p>An intelligent system designed to optimize air traffic flow by analyzing flight data, predicting congestion, and suggesting efficient routing strategies to enhance safety and reduce delays</p>
+            <a href="https://github.com/yourgithub/isl-project" target="_blank">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">AI Resume Screener</div>
+          <div class="card-back">
+            <p>An AI-powered tool that automates resume screening by analyzing candidate profiles, extracting key skills, and ranking them against job requirements to streamline the hiring process.</p>
+            <a href="https://github.com/Stephy/Gamified-inventory-management" target="_blank">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">Recruitment management System</div>
+          <div class="card-back">
+            <p>A web-based system that streamlines the recruitment process by managing job postings, applications, candidate shortlisting, and interview scheduling efficiently.</p>
+            <a href="https://github.com/Stephy/Gamified-inventory-management" target="_blank">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Presentations Section -->
+  <section>
+    <h2>Presentations</h2>
+   
+    
+
+      <div class="card" >
+        <div class="card-inner" style="width:600px; height:500px;">
+          <div class="card-front">Air Traffic Flow Optimization</div>
+          <div class="card-back">
+            
+             
+  <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQQpK7tbTqXeIoqGGKyOVjGC_JvsXoQtb0JsptaaVRdgnGaMgt0TR26ewAVP3EsoA/pubembed?start=false&loop=false&delayms=3000" frameborder="0" width="600" height="500" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+            <a href="#" target="_blank">View</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" >
+        <div class="card-inner" style="width:600px; height:500px;">
+          <div class="card-front">Gamification in Inventory Management</div>
+          <div class="card-back">
+            
+             
+  <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSVKfsG9efWcRN09iYE8B3pr-1_10hw9IbSdWYWShUfuIPPtuBO-AQWE1FauHzvdA/pubembed?start=true&loop=true&delayms=2000"  frameborder="0" width="600" height="500" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+            <a href="#" target="_blank">View</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" >
+        <div class="card-inner" style="width:600px; height:500px;">
+          <div class="card-front">Scalable cloud service for IoT device management and analytics.</div>
+          <div class="card-back">
+            
+          
+  <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vR8BYvCdpOnDLjxLtIokXM8NCo4235LZzZ725ZBb5kCovisf9WeMGL-iQZaG0AZPg/pubembed?start=true&loop=true&delayms=2000" frameborder="0" width="600" height="500" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+            <a href="#" target="_blank">View</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" >
+        <div class="card-inner" style="width:600px; height:500px;">
+          <div class="card-front">Indian Sign Language Converter</div>
+          <div class="card-back">
+            
+        
+  <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSh6vvCd8ZCWQ5w7SzT_Inv2B8OY2-Pb9X_CZ5voLZ5YCVkx2OpqvFa1qimtZ6lFg/pubembed?start=true&loop=true&delayms=1000"  frameborder="0" width="600" height="500" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+            <a href="#" target="_blank">View</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" >
+        <div class="card-inner" style="width:600px; height:500px;">
+          <div class="card-front">Aligning Corporate Culture</div>
+          <div class="card-back">
+            
+         
+  <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQqr3MR9ukJrz9vOCj-SdjNwWK3daQ4m0BWIlhuFr3Lb2nmaXfrmHriuzshm7L2dA/pubembed?start=true&loop=true&delayms=2000"  frameborder="0" width="600" height="500" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+            <a href="#" target="_blank">View</a>
+          </div>
+        </div>
+      </div>
+
+  </section>
+
+
+  <footer>
+    <p>Connect with me:</p>
+    <a href="https://github.com/StephyBless" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/in/stephy-bless-11022005s/" target="_blank">LinkedIn</a>
+    <a href="mailto:stephybless11@gmail.com">Email</a>
+
+  </footer>
+
+</body>
+</html>
